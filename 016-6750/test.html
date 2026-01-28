@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test01</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0;
+        }
+
+        html {
+            scroll-padding-top: 200px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 2;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: rgb(0, 84, 145);
+            padding: 20px;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            background-color: brown;
+            color: rgb(255, 255, 255);
+            border-radius: 20px;
+            text-align: center;
+        }
+        footer{
+            background-color: rgb(1, 83, 199);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 32px;
+
+        }
+
+        .container {
+            background-color: rgb(144, 86, 232);
+            max-width: 1200px;
+            margin: 200px auto 40px;
+            padding: 0px;
+            
+
+        }
+
+        .card {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            width: 900px 100%;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+        }
+        .card1 {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            width: 900px 100%;
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+        }
+
+        .grid {}
+
+        .box-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: -
+        }
+
+        .box1 {
+            background-color: rgb(189, 72, 0);
+            border-radius: 20px;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            width: 300px 250px;
+
+        }
+
+        .box2 {
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+
+        .box3 {
+            width: 50px;
+            height: 50px;
+        }
+
+
+        span {
+            color: brown;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 200px auto 40px;
+            padding: 20px 16px;
+            background-color: whitesmoke;
+
+            .button {
+
+                list-style: none;
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .button li {
+                max-width: 15px 0px;
+                transition: transform 0.30s ease;
+                margin: auto;
+            }
+
+            .button li:hover {
+                transform: translateY(-15px);
+            }
+
+            .button a {
+                /* background-color: #b41515; */
+                background: linear-gradient(135deg, rgb(74, 187, 235), rgb(9, 74, 227));
+                box-shadow: 0 4px 6px rgba(109, 109, 109, 109);
+                padding: 10px 20px;
+                border-radius: 20px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.5rem;
+
+            }
+
+            .button a:hover {
+                /* background-color: #f5a12c;
+  /*เปลี่ยนสีเมื่อเมาส์ชี้*/
+                /* cursor: pointer; เมาส์รูปมือ */
+                background: linear-gradient(135deg, rgb(240, 136, 24), rgb(255, 95, 215));
+
+            }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>📊รายงานผลเกรด</h2>
+        <!-- card1 -->
+        <div class="card ">
+
+            <ul class="button">
+                <li><a href="#1/2567" style="color: white;">👩‍🎓ข้อมูลนักศึกษา</a></li>
+                <li><a href="#2/2567" style="color: white;">📚ผลการเรียน</a></li>
+                <li><a href="#1/2568" style="color: white;">📞ติดต่อ</a></li>
+
+            </ul>
+        </div>
+        <!-- card2 -->
+        <div class="card1">
+            <div class="box1">
+                <h4>Mis.Naphatsorn Tuakaeo</h4>
+                <hr>
+                <div class="box-grid">
+                    <div class="box2">
+                        <p>📚รหัสนักศึกษา :</p>
+                        <p>👩‍🎓ชื่อ-นามสกุล :</p>
+                        <p>🎓หมู่เรียน :</p>
+                        <p>👩‍🏫อาจารย์ที่ปรึกษา :</p>
+                        <p>🔗GitHup :</p>
+                    </div>
+                    <div class="box3">
+                        <p>674259016</p>
+                        <p>นางสาว นภัสสร ตัวแก้ว</p>
+                        <p>67/50</p>
+                        <p>ผู้ช่วยศาสตราจารย์ ดร. อุษณีย์ ภักดีตระกูลวงศ์ </p>
+                        <a href="https://github.com/016Naphatsorn">https://github.com/016Naphatsorn</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <img src="img/111.jpg" alt="รูปนักศึกษา" width="50px" height="50px">
+        </div>
+        <!-- card3 -->
+        <div class="card">
+
+            <ul class="button">
+                <li><a href="#1/2567" style="color: white;">📗ปี 1 เทอม 1<span>3.41</span></a></li>
+                <li><a href="#2/2567" style="color: white;">📘ปี 1 เทอม 2<span>3.77</span></a></li>
+                <li><a href="#1/2568" style="color: white;">📕ปี 2 เทอม 1<span>3.98</span></a></li>
+
+            </ul>
+
+        </div>
+        <!-- card4 -->
+        <div class="card1">
+            <h1>🏆เกรดเฉลี่ยสะสม : 3.72</h1>
+        </div>
+        <footer>
+            <p>@2024 Webmaster by Naphatsorn Tuakaeo.ID 674259016</p>
+            <p>🏫Nakhon Pathom Rajabhut University</p>
+        </footer>
+    </div>
+</body>
+
+</html>
