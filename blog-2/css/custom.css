@@ -228,7 +228,10 @@ a {
   font-size: 1.1rem;
   font-weight: 600;
 }
-
+.post-list {
+  display: flex;
+  flex-direction: column;
+}
 .header-line {
   font-size: 0.7rem;
   font-weight: 500;
@@ -672,7 +675,23 @@ transform 0.2s ease; */
   color: #e7e3e3;
   background-color: #444444;
 }
-/* ------------------RESPONSIVE */
+/* ออเดอร์ลำดับใหม่ */
+.order-widget01 {
+  order: 2;
+}
+.order-widget02 {
+  order: 3;
+}
+.order-widget03 {
+  order: 4;
+}
+.order-widget04 {
+  order: 5;
+}
+.order-widget05 {
+  order: 1;
+}
+/* ------------------RESPONSIVE----------------------- */
 @media (max-width: 922px) {
   .site-header {
     background-color: rgb(19, 255, 70);
@@ -769,5 +788,32 @@ transform 0.2s ease; */
   /* เปิดเมนู */
   #menu.overlay {
     display: flex;
+  }
+  /* สลับตำแหน่ง  ใช้ order ต้องมี display:flex ให้กับ post */
+  /* ค่าลบ - ตัวลบมากสุดจะอยุ่บนสุด */
+  .order-img {
+    order: -3;
+  }
+  .order-table {
+    order: -2;
+  }
+  .order-form {
+    order: -1;
+  }
+  /* ค่าบวก ตัว+น้อยสุดจะอยุ่บนสุด */
+  .order-widget01 {
+    order: 5;
+  }
+  .order-widget02 {
+    order: 2;
+  }
+  .order-widget03 {
+    order: 1;
+  }
+  .order-widget04 {
+    order: 4;
+  }
+  .order-widget05 {
+    order: 3;
   }
 }
